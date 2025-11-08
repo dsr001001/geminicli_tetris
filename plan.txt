@@ -1,0 +1,44 @@
+Here is a plan for creating a simple Tetris game:
+
+1.  **Set up the basic HTML structure:**
+    *   Create an `index.html` file.
+    *   Include a `<title>` for the game.
+    *   Add a `<link>` to a `style.css` file.
+    *   Create a `<div>` to act as the game container.
+    *   Include a `<script>` tag for the `script.js` file.
+
+2.  **Create the game board:**
+    *   In `style.css`, style the game container.
+    *   Use CSS Grid to create the game board layout.
+    *   Define the colors for the different Tetrominoes.
+
+3.  **Define the Tetromino shapes:**
+    *   In `script.js`, create an array of objects to represent the different Tetromino shapes and their rotations.
+
+4.  **Implement the game logic in `script.js`:**
+    *   **Game State:** Create variables to track the game board, current piece, current position, score, and game over state.
+    *   **Drawing:** Create functions to draw the game board and the current piece.
+    *   **Piece Movement:**
+        *   Implement functions to move the piece left, right, and down.
+        *   Implement a function to rotate the piece.
+        *   Add collision detection to prevent pieces from moving out of bounds or through other pieces.
+    *   **Line Clearing:**
+        *   Create a function to check for completed lines.
+        *   If a line is complete, remove it and shift the rows above it down.
+        *   Update the score.
+    *   **Spawning New Pieces:**
+        *   Create a function to randomly select a new Tetromino and place it at the top of the board.
+    *   **Game Loop:**
+        *   Use `setInterval` to create a game loop that moves the piece down at a regular interval.
+    *   **Game Over:**
+        *   Implement a condition to check if the game is over (e.g., a new piece overlaps with an existing piece at the start).
+
+5.  **Add Keyboard Controls:**
+    *   Add an event listener for `keydown` events.
+    *   In the event listener, check for the arrow keys (left, right, down) and the up arrow for rotation.
+    *   Call the corresponding movement/rotation functions.
+
+6.  **Style the game:**
+    *   In `style.css`, add styles to make the game visually appealing.
+    *   Add a score display.
+    *   Add a "Game Over" message.

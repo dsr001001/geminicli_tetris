@@ -1,0 +1,44 @@
+body {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .grid {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #111;
+    border: 5px solid #333;
+  }
+
+  .grid div {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #222;
+    box-sizing: border-box;
+  }
+
+  .tetromino {
+    background-color: blue;
+    border: 1px solid #111;
+  }
+
+  .mini-grid {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #111;
+    border: 5px solid #333;
+  }
+
+  .mini-grid div {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #222;
+    box-sizing: border-box;
+  }
